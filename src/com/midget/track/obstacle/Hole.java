@@ -1,5 +1,7 @@
 package com.midget.track.obstacle;
 
+import com.midget.common.Vector;
+
 public class Hole extends Obstacle {
 
 	////////////////////////////////
@@ -13,6 +15,10 @@ public class Hole extends Obstacle {
 	//        Constructors        //
 	//                            //
 	////////////////////////////////
+	
+	public Hole(Vector worldCoordinates) {
+		super(worldCoordinates);
+	}
 	
 	////////////////////////////////
 	//                            //

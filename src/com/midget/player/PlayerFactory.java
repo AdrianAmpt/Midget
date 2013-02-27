@@ -14,7 +14,7 @@ public class PlayerFactory {
 	////////////////////////////////
 	
 	private Domain domain;
-	private List<Player> playerArrray;
+	private List<Player> playerArray;
 	
 	////////////////////////////////
 	//                            //
@@ -61,27 +61,27 @@ public class PlayerFactory {
 	 * @return the playerArrray
 	 */
 	public List<Player> getPlayerArrray() {
-		return playerArrray;
+		return playerArray;
 	}
 
 	/**
 	 * @param playerArrray the playerArrray to set
 	 */
 	public void setPlayerArrray(List<Player> playerArrray) {
-		this.playerArrray = playerArrray;
+		this.playerArray = playerArrray;
 	}
 	
 	/**
 	 * @param player
 	 */
 	public void addPlayer(Player player) {
-		this.playerArrray.add(player);
+		this.playerArray.add(player);
 	}
 	
 	/**
 	 * @param player
 	 */
 	public void removePlayer(Player player) {
-		this.playerArrray.remove(player);
+		this.playerArray.remove(player);
 	}
 }
