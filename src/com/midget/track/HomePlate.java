@@ -1,5 +1,7 @@
 package com.midget.track;
 
+import com.midget.common.Vector;
+
 public class HomePlate {
 
 	////////////////////////////////
@@ -8,11 +10,20 @@ public class HomePlate {
 	//                            //
 	////////////////////////////////
 	
+	private Vector worldCoordinates;
+	
 	////////////////////////////////
 	//                            //
 	//        Constructors        //
 	//                            //
 	////////////////////////////////
+
+	/**
+	 * @param worldCoordinates the worldCoordinates to set
+	 */
+	public void setWorldCoordinates(Vector worldCoordinates) {
+		this.worldCoordinates = worldCoordinates;
+	}
 	
 	////////////////////////////////
 	//                            //
@@ -25,4 +36,15 @@ public class HomePlate {
 	//  Getters, Setters & Adders //
 	//                            //
 	////////////////////////////////
+	
+	public HomePlate(Vector worldCoordinates) {
+		this.worldCoordinates = worldCoordinates;
+	}
+
+	/**
+	 * @return the worldCoordinates
+	 */
+	public Vector getWorldCoordinates() {
+		return worldCoordinates;
+	}
 }
