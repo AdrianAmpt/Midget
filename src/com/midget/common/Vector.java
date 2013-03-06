@@ -1,6 +1,5 @@
 package com.midget.common;
 
-import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
 public class Vector {
@@ -10,7 +9,7 @@ public class Vector {
 	//                            //
 	////////////////////////////////
 	
-	private FloatBuffer vec;
+	private FloatBuffer vector;
 	private float x;
 	private float y;
 	
@@ -24,7 +23,7 @@ public class Vector {
 		this.x = x;
 		this.y = y;
 		
-		vec = FloatBuffer.wrap(new float[]{x, y});
+		vector = FloatBuffer.wrap(new float[]{x, y});
 	}
 	
 	////////////////////////////////
@@ -67,8 +66,8 @@ public class Vector {
 	//                            //
 	////////////////////////////////
 	
-	public FloatBuffer getVec() {
-		return vec;
+	public FloatBuffer getVector() {
+		return vector;
 	}
 
 	public float getX() {

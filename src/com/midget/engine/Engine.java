@@ -1,43 +1,40 @@
-package com.midget.track;
+package com.midget.engine;
 
-import java.util.HashSet;
-import java.util.Set;
-
-import com.midget.common.Vector;
-import com.midget.track.obstacle.Obstacle;
-
-public class Cell {
-
+public class Engine {
 	////////////////////////////////
 	//                            //
 	//         Properties         //
 	//                            //
 	////////////////////////////////
 	
-	private Vector[] points;
-	private Vector worldCoordinates;
-	private Set<Obstacle> obstacles;
+	private long time;
+	private boolean active;
 	
 	////////////////////////////////
 	//                            //
 	//        Constructors        //
 	//                            //
 	////////////////////////////////
-	
-	Cell (Vector worldCoordinates) {
-		this.worldCoordinates = worldCoordinates;
-		points[0] = new Vector(0 , 0);
-		points[1] = new Vector(0 , 1);
-		points[2] = new Vector(1 , 1);
-		points[3] = new Vector(1 , 0);
-		this.obstacles = new HashSet<Obstacle>();
+
+	public Engine(){
 	}
 	
 	////////////////////////////////
-	//                            //
+	//  	                      //
 	//       Business Logic       //
 	//                            //
 	////////////////////////////////
+	
+	public void update(long tpf){
+		
+	}
+	
+	public void run(){
+		while(active){
+			update(time - System.currentTimeMillis());
+			time = System.currentTimeMillis();
+		}
+	}
 	
 	////////////////////////////////
 	//                            //
