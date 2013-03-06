@@ -65,7 +65,7 @@ public class Vector {
 	}
 	
 	public Vector normalVector(){
-		return new Vector(this.y, -this.x);
+		return new Vector(this.y, -this.x).normalize();
 	}
 	
 	////////////////////////////////
