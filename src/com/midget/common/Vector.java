@@ -40,6 +40,10 @@ public class Vector {
 		return new Vector(x*s, y*s);
 	}
 	
+	public Vector normalize(){
+		return this.scale(this.length());
+	}
+	
 	public Vector add(Vector v){
 		return new Vector(x + v.getX(), y + v.getY());
 	}
@@ -58,6 +62,10 @@ public class Vector {
 	
 	public float angle(){
 		return angle(new Vector(1, 0));
+	}
+	
+	public Vector normalVector(){
+		return new Vector(this.y, -this.x);
 	}
 	
 	////////////////////////////////

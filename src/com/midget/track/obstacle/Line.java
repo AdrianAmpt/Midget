@@ -51,6 +51,20 @@ public class Line {
 	}
 	
 	/**
+	 * returns the value of t for a point on the line
+	 * @param v
+	 * @return
+	 */
+	private float pointAtLine(Vector v){
+		float x = v.getX() / point0.add(point1.subtract(v)).getX();
+		float y = v.getY() / point0.add(point1.subtract(v)).getY();
+		if(x==y){
+		return x;
+		}
+		throw new IllegalArgumentException("Vertices are not at the same line y'all");
+	}
+	
+	/**
 	 * get the reflection from the inComingVector at intersection found at time = t
 	 * @param t
 	 * @param inComing
