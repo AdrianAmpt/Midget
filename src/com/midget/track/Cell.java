@@ -14,10 +14,6 @@ public class Cell {
 	//                            //
 	////////////////////////////////
 	
-	/***************************z****
-	 *        Properties           *
-	 *******************************/
-	
 	private Vector[] points;
 	private Vector worldCoordinates;
 	private Set<Obstacle> obstacles;
