@@ -1,8 +1,5 @@
 package com.midget.track.obstacle;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.midget.common.Vector;
 
 public abstract class Obstacle {
@@ -17,7 +14,6 @@ public abstract class Obstacle {
 	protected float angle;
 	protected float slopeAngle;
 	protected float friction;
-	protected List<Line> lines; 
 	
 	////////////////////////////////
 	//                            //
@@ -27,7 +23,6 @@ public abstract class Obstacle {
 	
 	public Obstacle(Vector worldCoordinates){
 		this.worldCoordinates = worldCoordinates;
-		this.lines = new ArrayList<Line>();
 	}
 	
 	////////////////////////////////
@@ -96,19 +91,5 @@ public abstract class Obstacle {
 	 */
 	public void setFriction(float friction) {
 		this.friction = friction;
-	}
-
-	/**
-	 * @return the lines
-	 */
-	public List<Line> getLines() {
-		return lines;
-	}
-
-	/**
-	 * @param lines the lines to set
-	 */
-	public void setLines(List<Line> lines) {
-		this.lines = lines;
 	}
 }

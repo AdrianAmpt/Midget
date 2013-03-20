@@ -68,6 +68,10 @@ public class Vector {
 		return new Vector(this.y, -this.x).normalize();
 	}
 	
+	public boolean areParallel(Vector v){
+		return (this.x / v.x == this.y / v.y);
+	}
+	
 	////////////////////////////////
 	//                            //
 	//  Getters, Setters & Adders //

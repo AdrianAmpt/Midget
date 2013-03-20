@@ -1,5 +1,6 @@
 package com.midget.player.utilities;
 
+import com.midget.common.Vector;
 import com.midget.player.Player;
 
 public class Swing {
@@ -12,6 +13,8 @@ public class Swing {
 	
 	private Player player;
 	private Ball ball;
+	private float force;
+	private Vector direction;
 	
 	////////////////////////////////
 	//                            //
@@ -62,5 +65,33 @@ public class Swing {
 	 */
 	public void setBall(Ball ball) {
 		this.ball = ball;
+	}
+
+	/**
+	 * @return the force
+	 */
+	public float getForce() {
+		return force;
+	}
+
+	/**
+	 * @param force the force to set
+	 */
+	public void setForce(float force) {
+		this.force = force;
+	}
+
+	/**
+	 * @return the direction
+	 */
+	public Vector getDirection() {
+		return direction;
+	}
+
+	/**
+	 * @param direction the direction to set
+	 */
+	public void setDirection(Vector direction) {
+		this.direction = direction;
 	}
 }
